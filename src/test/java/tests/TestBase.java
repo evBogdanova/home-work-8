@@ -13,10 +13,8 @@ import static helpers.AttachmentHelper.*;
 public class TestBase {
 
     @BeforeAll
-    static void fullScreen() {
-        Configuration.startMaximized = true;
-    }
     static void setup() {
+        Configuration.startMaximized = true;
         addListener("AllureSelenide", new AllureSelenide());
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC", true);
