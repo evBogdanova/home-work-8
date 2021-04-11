@@ -60,7 +60,7 @@ public class StudentRegistrationPage {
     }
 
     public void checkForm(Student student) {
-        step("Проверка заполненной тнформации", () -> {
+        step("Проверка заполненной информации", () -> {
         $(".table-responsive").shouldHave(text("Student Name " + student.getFirstName() + " " + student.getLastName()),
                 text("Student Email " + student.getUserEmail()),
                 text("Gender " + student.getGender()),
